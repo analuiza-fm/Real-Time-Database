@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Introdução ao Firebase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+
+
+<body>
+    <h1>Real Time DataBase</h1>
+    <br>
+
+    <table border="1">
+
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Data</th>
+           
+        <tbody id="tabela">
+    
+        <tr id="addLinhaTabela" class="registro">
+            <td id="addTdNome" class="info-nome"></td>
+            <td id="addTdDesc" class="info-desc"></td>
+            <td id="addTdData" class="info-data"></td>
+        </tr>
+        
+        </tbody>
+    </table>
+
+    <br>
+
+    <ul id="usersList"></ul>
+
+    <div>
+        <form id="cadastro">
+            <div class="form-group">
+                <!--é um elemento do bootscrap-->
+                <label for="nameInput">Nome</label>
+                <input type="text" class="form-control" id="nameInput" name="nome" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <label for="descInput">Descrição</label>
+                <input type="text" class="form-control" id="descInput" name="descricao" placeholder="Descrição">
+            </div>
+            <div class="form-group">
+                <label for="dataInput">Data</label>
+                <input type="date" class="form-control" id="dataInput" name="data" placeholder="Data">
+            </div>
+
+            <button id="addButton">Adicionar</button>
+        </form>
+    </div>
+
+    <br><br>
+ 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/real-time-database.js"></script>
+
+</body>
+
+</html>
