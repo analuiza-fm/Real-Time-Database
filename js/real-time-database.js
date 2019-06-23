@@ -46,6 +46,7 @@ firebase.database().ref('users').on('value', function (snapshot) {
     snapshot.forEach(function (item) {
         var td = document.createElement('td');
         td.appendChild(document.createTextNode(item.val().name));
+        //addTdNome.parentNode.appendChild(td);
         addTdNome.appendChild(td);
     });
 });
